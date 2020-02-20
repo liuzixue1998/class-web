@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>final</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	*{
+		padding: 0;
+		margin: 0;
+
+	}
+	ul,li{list-style: none;}
+	a{
+		text-decoration: none;
+	}
+	body{
+		background-image: url(ima/32.jpg);
+		background-size: 1920px 2000px;
+
+	}
+
+
+	#top{
+		width: 1500px;
+		background-color: black;
+		text-align: center;
+	}
+
+
+	.sosuo{
+		width: 50px;
+		height: 5px;
+		float: left;
+		position: absolute;
+		left: 1300px;
+	}
+	#button{
+		width: 44px;
+		height: 21px;
+		background-color: #000;
+		color: #fff;
+		border: 1px  solid  #f8f5ee;
+	}
+
+	.list
+	{
+		position: absolute;
+		left:0px;
+		top: 350px;
+		z-index: 999;
+	}
+	#nav{
+		background-color: white;
+		margin-top: 20px;
+		margin-left: 50px;
+		list-style:none;
+		line-height:27px;
+		color: black;
+		font-size: 30px;
+		font-weight: bold;
+
+		}
+	#nav a:link,#nav a:visited{
+		display:block;
+		width:150px;
+		color: black;
+		text-align:center;
+		text-decoration:none;
+		font-weight: bold;
+		}
+	#nav a:hover{
+		color: white;
+		text-decoration: none;
+		background-color:#0e6eb8;
+
+		}
+	#nav ul{list-style: none;}
+	#nav li{
+		float:left;
+		width: 200px;
+		text-align: center;
+
+		}
+	#nav li ul li a:hover{
+		background-color:#0e6eb8;
+		text-decoration:none;
+
+		}
+	#nav li ul{
+		display:none;
+		font-size: 15px;
+		font-weight:normal;
+		background-color: #0e6eb8;
+		}
+	#nav li.subMenuShow ul{
+		display:block;
+		}
+
+
+	.wrap{
+		width: 1200px;
+		height: 500px;
+		position: relative;
+		border:5px solid #000;
+		margin: 30px auto;
+		overflow: hidden;
+		top: 30px;
+	}
+	.wrap a{
+		display: none;
+
+	}
+	.bottom{
+		width: 1002px;
+		height: 73px;
+		bottom:0;
+		left: 99px;
+		position: absolute;
+		
+	}
+	.bottom>span{
+		display: block;
+		width: 50px;
+		height: 73px;
+		list-style: 73px;
+		text-align: center;
+		color: black;
+		font-size: 50px;
+		float: left;
+		cursor: pointer;
+
+	}
+	#next{
+		float: right;
+	}
+	
+
+	#picScroll img{
+		width:192px;
+		height:270px;
+		margin-left:5px;
+		margin-top: 0px;
+	}
+	#picScroll{
+		margin:0 auto;
+		height:270px;
+		border:1px solid #C90;
+		white-space:nowrap; 
+		width:300px;
+		overflow:hidden;
+		position: absolute;
+		left: 200px;
+		top: 950px;
+	}
+
+
+	.jieshao{
+	
+		width: 400px;
+		height: 500px;
+		float: left;
+		text-align: center;
+		color: white;
+		position: absolute;
+		left: 100px;
+		top:1300px;
+	}
+	.jieshao_1{
+		color:#8B6508;
+		text-align: center;
+		height: 400px;
+		height: 50px;
+		font-size: 25px;
+	}
+	.jieshao_2{
+		width: 400px;
+		height: 170px;
+		border-top: 10px;
+		text-align: center;
+	}
+	div.jieshao_2 img{
+		width: 300px;
+		height: 160px;
+	}
+	.jieshao_3{
+		font-size: 17px;
+	}
+	.chuanyuan{
+		
+		width: 400px;
+		height: 300px;
+		float: left;
+		text-align: center;
+		position: absolute;
+		left: 600px;
+		color: white;
+		top: 950px;
+		clear: left;
+	}
+	.chuanyuan_1{
+		text-align: center;
+		height: 400px;
+		height: 50px;
+		font-size: 25px;
+		color:#8B6508;
+	}
+	.zuozhe {
+		
+		width: 400px;
+		height: 500px;
+		float: left;
+		text-align: center;
+		position: absolute;
+		left: 950px;
+		color: white;
+		top: 1300px;
+	}
+	.zuozhe_1{
+		color:#8B6508;
+		text-align: center;
+		height: 400px;
+		height: 50px;
+		font-size: 25px;
+	}
+	.zuozhe_2{
+	width: 400px;
+		height: 170px;
+		border-top: 10px;
+		text-align: center;
+	}
+	div.zuozhe_2 img{
+		width: 300px;
+		height: 160px;
+	}
+	.zuozhe_3{
+		font-size: 17px;
+	}
+	.jieshaoha{
+		width: 1500px;
+		height: 500px;
+	}
+
+
+	.foot{
+		width: 1485px;
+		height: 150px;
+		position: absolute;
+		top:1870px;
+		
+	}
+	.foot_top{
+		text-align: center;
+		font-size: 15px;
+		color:#CCCCFF ;
+	}
+	.foot_center{
+		width: 600px;
+		height: 1px;
+		
+	}
+	.foot_bottom{
+		text-align: center;
+		font-size: 15px;
+		color:#CCCCFF ;
+	}
+
+	#form{
+		position: absolute;
+		top: 1050px;
+		right: 80px;
+		width: 400px;
+		height: 300px;
+
+	}
+	#form h1{
+		font-size: 25px;
+		position: absolute;
+		top: -50px;
+		left: 80px;
+
+	}
+
+
+	
+	</style>
+</head>
+<body>
+	<div id="top"><img src="ima/44.jpg"> </div>
+
+	<div class="list">
+		<ul id="nav">
+			<li><a href="#">主页</a>
+				<ul>
+					<li><a href="#">主页介绍</a></li>
+					<li><a href="#">人物介绍</a></li>
+					<li><a href="#">战役介绍</a></li>
+				</ul>
+			</li>
+			<li><a href="#">人物</a>
+				<ul>
+					<li><a href="#">路飞</a></li>
+					<li><a href="#">索隆</a></li>
+					<li><a href="#">乔巴</a></li>
+					<li><a href="#">乌索普</a></li>
+					<li><a href="#">娜美</a></li>
+					<li><a href="#">山治</a></li>
+					<li><a href="#">罗宾</a></li>
+					<li><a href="#">弗兰奇</a></li>
+					<li><a href="#">布鲁克</a></li>
+				</ul>
+			</li>
+			<li><a href="#">著名战役</a>
+				<ul>
+					<li><a href="#">司法岛</a></li>
+					<li><a href="#">马林焚多</a></li>
+					<li><a href="#">德雷斯罗萨</a></li>
+					<li><a href="#">阿拉巴斯坦</a></li>
+					<li><a href="#">恐怖三桅帆船</a></li>
+					<li><a href="#">空岛</a></li>
+					<li><a href="#">鱼人岛</a></li>
+					<li><a href="#">庞克哈萨德</a></li>
+					<li><a href="#">推进城</a></li>
+					<li><a href="#">香波地群岛</a></li>
+				</ul>
+			</li>
+			<li><a href="#">漫画</a>
+				<ul>
+					<li><a href="#">腾讯漫画</a></li>
+					<li><a href="#">布卡漫画</a></li>
+					<li><a href="#">快看漫画</a></li>
+					<li><a href="#">有妖气漫画</a></li>
+				</ul>
+			</li>
+			<li><a href="#">分析</a>
+				<ul>
+					<li><a href="#">杂文</a></li>
+					<li><a href="#">同人漫画</a></li>
+					<li><a href="#">点评</a></li>
+					<li><a href="#">特色</a></li>
+				</ul>
+			</li>
+			<li><a href="#">资源</a>
+				<ul>
+					<li><a href="#">音乐</a></li>
+					<li><a href="#">视频</a></li>
+					<li><a href="#">图库</a></li>
+					<li><a href="#">游戏</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="sosuo">
+		<form>
+		 <input type=”text” id="text" />
+		 <input type=”button” value="搜索" name="search" id="button" />
+		</form>
+	</div>
+
+	<div class="wrap">
+		<a href="#" style="display: block;"><img src="ima/1.jpg" width="1200px;" height="500px;"></a>
+		<a href="#"><img src="ima/5.jpg" width="1200px;" height="500px;"></a>
+		<a href="#"><img src="ima/6.jpg" width="1200px;" height="500px;"></a>
+		<a href="#"><img src="ima/9.jpg" width="1200px;" height="500px;"></a>
+		<a href="#"><img src="ima/10.jpg" width="1200px;" height="500px;"></a>
+		<a href="#"><img src="ima/11.jpg" width="1200px;" height="500px;"></a>
+		<a href="#"><img src="ima/12.jpg" width="1200px;" height="500px;"></a>
+		<a href="#"><img src="ima/31.jpg" width="1200px;" height="500px;"></a>
+		<div class="bottom">  
+			<span id="pre"><</span>
+			<span id="next">></span>
+		</div>
+
+	</div>
+
+	<div id="picScroll">
+	<span id="picScroll1">
+		<img src="ima/18.jpg" />
+		<img src="ima/19.jpg" />
+		<img src="ima/20.jpg" />
+		<img src="ima/21.jpg" />
+		<img src="ima/22.jpg" />
+		<img src="ima/23.jpg" />
+		<img src="ima/24.jpg" />
+		<img src="ima/25.jpg" />
+		<img src="ima/26.jpg" />
+	</span>
+	<span id="picScroll2"></span>
+ </div> 
+
+
+	<div class="jieshao">
+		<div class="jieshao_1">剧情介绍</div>
+		<div class="jieshao_2"> <img src="ima/14.jpg"></div>
+		<div class="jieshao_3"> &nbsp;&nbsp;&nbsp;&nbsp;"One Piece"在故事中为“宝藏”之意。故事描述男主角路飞为了当上“海贼王”而踏上伟大航道及其伙伴的经历。传说中，海贼王罗杰在死前说出他留下了具有财富、名声、力量、世界第一的宝藏"One Piece"，许多人为了争夺"One Piece"，争相出海，许多海贼开始树立霸权，而形成了“大海贼时代”。十年后，路飞为了要实现与因救他而断臂的红发香克斯出海的约定，在遥远的路途上找寻着志同道合的伙伴，一起进入伟大航道，目标当上“海贼王”。该漫画在世界各地大受欢迎，至今还在连载中，在日本漫画周刊《周刊少年Jump》中占据人气榜的第一。
+		</div>
+	</div>
+	<div class="chuanyuan">
+		<div class="chuanyuan_1">船员介绍</div>
+		<p>【船长】草帽：路飞</p>
+		<p>【航海士】小贼猫：娜美</p>
+		<p>【厨师】黑足：香吉士</p>
+		<p>【战斗员】黑贼猎人：索隆</p>
+		<p>【船医】爱吃棉花糖的驯鹿：乔巴</p>
+		<p>【考古学家】恶魔之子：罗宾</p>
+		<p>【船匠】改造人：弗兰奇</p>
+		<p>【音乐家】灵魂之王：布鲁克</p>
+		<p>【船】旧：黄金梅利号【前进梅利号】</p>
+		<p>【船】新：万里阳光号【千阳号、萨乌森·桑尼号】</p>
+	</div>
+	<div class="zuozhe">
+		<div class="zuozhe_1">作者介绍</div>
+		<div class="zuozhe_2"><img src="ima/28.jpg"></div>
+		<div class="zuozhe_3"><p>&nbsp;&nbsp;&nbsp;&nbsp;尾田荣一郎：生于1975年1月1日，生肖属兔，星座是山羊座。从九州东海人体大学工学部建筑系退学后，先后担任过漫画家甲斐谷忍，德宏正.</p>
+		<p>&nbsp;&nbsp;&nbsp;长篇人气冒险剧《ONEPIECE》（又译：《海盗路飞》《海贼王》《航海王》等）开始在《少年JUMP》上连载。这部作品想象力丰富，充满热血漫画典型元素，令其在读者和业界间均获得很高评价，被誉为继承了手冢治虫，松本零士时代奋进精神的“日本少年漫画的强心剂”。2005年2月，《ONEPIECE》漫画单行本累计销量突破亿册大关。</p>
+		</div>
+	</div>
+</div>
+
+	<div class="foot">
+		<div class="foot_top">
+			<p>电子信箱&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;设为首页&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;在线调查&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;加入收藏&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;网站地图&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;关于我们</p>
+		</div>
+		<div class="foot_center">
+		</div>
+		<div class="foot_bottom">
+				<p> Copyright 2016-2017&nbsp; &nbsp;Hebshufajia.&nbsp;com,ALL &nbsp;&nbsp;Rights &nbsp;&nbsp;Reserved</p>
+				<p>冀ICP备05067795号&nbsp;&nbsp; 冀公网安备110402440008号</p>
+		</div>
+
+	</div>
+
+	<div id="form">
+		<h1 >登陆界面</h1>
+		<form>
+		<table>
+			<tr>
+				<td>用户名：</td>
+				<td><input type="text" id="username" name="username" /><span id="errorTip"></span></td>
+			</tr>
+			<tr>
+				<td>密码：</td>
+				<td><input type="password" id="passwd"</td>
+			</tr>
+			<tr>
+				<td>确认密码：</td>
+				<td><input type="password" id="rePasswd"/></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td><input type="reset" id="reset" value="重设" />
+				<input id="submit" type="submit" value="提交" /></td>
+			</tr>
+		</table>
+	</form>
+	</div>
+
+
+</body>
+<script type="text/javascript">
+	window.onload = function(){
+			var liNodes = document.getElementsByTagName("li");
+			for (var j=0; j<liNodes.length; j++)
+			{
+				liNodes[j].onmouseover = function(){
+					this.className = "subMenuShow";
+				}
+				liNodes[j].onmouseout = function(){
+					this.className = "";
+				}
+			}
+			onload2();
+			onload3();
+		}
+
+
+
+	var wrap=document.getElementsByClassName('wrap')[0];
+	var imgs=wrap.getElementsByTagName('a');
+	var pre=document.getElementById('pre');
+	var next=document.getElementById('next');
+	var i=0;
+	var timer=setInterval(function(){
+		imgs[i%8].style.display='none';
+		i++;
+		imgs[i%8].style.display='block';
+	},1000);
+	wrap.onmouseover=function(){
+		clearInterval(timer)
+	}
+	wrap.onmouseout=function(){
+		timer=setInterval(function(){
+		imgs[i%8].style.display='none';
+		i++;
+		imgs[i%8].style.display='block';
+	},1000);
+	}
+	function imgTab(){
+			imgs[i%8].style.display='none';
+			i++;
+			imgs[i%8].style.display='block';
+		}
+	pre.onclick=function(){
+			imgs[i%8].style.display='none';
+			i--;
+			if(i<0){
+				i=7;
+			}
+			imgs[i%8].style.display='block';
+	}
+	next.onclick=function(){
+		imgTab();
+	}
+
+
+	function onload2(){    
+	var speed = 30; 
+	picScroll = document.getElementById("picScroll");
+	picScroll1 = document.getElementById("picScroll1");
+	picscroll2 = document.getElementById("picScroll2");
+
+	picscroll2.innerHTML = picScroll1.innerHTML;
+
+	var ID=setInterval(changeToLeft,speed);
+	picScroll.onmouseover=function() {
+		clearInterval(ID);
+	}
+	picScroll.onmouseout=function() {
+		ID=setInterval(changeToLeft,speed);
+	}
+	};
+	function changeToLeft(){
+	
+	if(picScroll.scrollLeft >= (picScroll1.offsetWidth)){
+		picScroll.scrollLeft = 0;
+	}
+	else{
+		picScroll.scrollLeft += 1;
+	}
+	}
+
+	function onload3(){ 
+			//为“用户名”添加验证函数，当失去焦点时调用函数
+			var username = document.getElementById("username");	
+			username.onblur = checkUsername;
+		} 
+
+		//表单验证,检验是否输入用户名
+		function checkUsername() { 
+			var username = document.getElementById("username");
+			//检验该文本框用户是否已经输入
+			if (username.value.length == 0)//username.value==''
+			{		
+				username.parentNode.innerHTML = username.parentNode.innerHTML+"<span style='color:red'>用户名必须输入</span>";
+			}
+		}
+
+
+</script>
+</html>
