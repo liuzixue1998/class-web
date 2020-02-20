@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jj</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+	var d=new Date();
+	var str='2+3+4';
+	console.log(eval(str));//9
+	console.log(str);//2+3+4
+	setInterval(function(){
+		var d=new Date();
+		var hours=d.getHours();
+		var mins=d.getMinutes();
+		var secs=d.getSeconds();
+		//console.log(hours,mins,secs);
+
+		document.images[0].src='img/'+Math.floor(hours/10)+'.png';
+		document.images[4].src='img/'+Math.floor(secs/10)+'.png';
+		document.images[5].src='img/'+Math.floor(hours%10)+'.png';
+	},1000);
+
+	</script>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	var d=new Date();
+		var hours=d.getHours();
+		var mins=d.getMinutes();
+		var secs=d.getSeconds();
+
+	var arr=[Math.floor(hours/10),hours%10,Math.floor(mins/10),min%10,Math.floor(secs/10),secs%10]
+	for(var i=0;i<6;i++)
+	{
+		document.images[i].src='img/'+arr[i]+'.png'
+	}	
+</script>
+</html>

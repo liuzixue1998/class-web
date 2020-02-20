@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>冒泡排序</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">	
+	function diag()
+	{
+	var sPrompt = window.prompt('请输入一串数字，以英文逗号隔开', "");
+	var arr1=new Array();
+	 arr1=sPrompt.split(',');
+	var temp;
+	for(var i=0;len=arr1.length,i<len;i++)
+	{
+	for(var j=0;len=arr1.length,j<len;j++)
+	{
+		if(arr1[j]>arr1[j+1])
+		{
+			temp=arr1[j];
+			arr1[j]=arr1[j+1];
+			arr1[j+1]=temp;
+		}
+	}
+	}
+	for (var index = 0, len = arr1.length;  index < len;  ++index)
+	{
+		alert(arr1[index]);
+	}
+}
+	</script>
+</head>
+<body>
+	<form>
+	<input type="button" value="prompt" onclick="diag()" /><br />
+	</form>
+</body>
+</html>

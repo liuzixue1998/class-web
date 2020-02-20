@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+	var box=100;
+	if(box>=100){
+		alert("甲");
+	}
+	else if(box>=90){
+		alert("乙");
+	}
+	else if(box>=80){
+		alert("丙");
+	}
+	else if(box>=70){
+		alert("丁");
+	}
+	else if(box>=60){
+		alert("及格");
+	}
+	else{
+		alert("不及格");
+	}
+	for (var i = 0;i<10;i++) {
+		document.write('<h1>hahhaahh</h1>')
+	}
+
+document.write('<table border="1px" cellpadding="20px">');
+	for (var i=1; i<=4; ++i) {
+				document.write('<tr>');
+				for (var j=1; j<=4; ++j) {
+					document.write('<td>&nbsp;</td>');
+				}
+				document.write('</tr>');
+			}
+			document.write('</table>');
+
+
+document.write('<table border="1px" cellpadding="20px">');		
+	var x=1;
+	var y=1;
+	while(x<=4){
+		document.write('<tr>');
+			while(y<=4){
+				document.write('<td>&nbsp;</td>');
+				y++;
+			}
+			document.write('</tr>');
+			x++;
+	}
+document.write('</table>');
+
+
+
+
+
+	</script>
+</head>
+<body>
+
+
+</body>
+</html>

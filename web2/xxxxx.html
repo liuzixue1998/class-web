@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>hhh</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+ 		var tiezi1={
+			title:"第2条帖子",
+			person:"a",
+			neirong: "第2条帖子这是我的第2条帖子",
+			time:"2011-02-14"}
+		var tiezi2={
+			title:"第4条帖子",
+			person:"c",
+			neirong:"第4条帖子这是我的第4条帖子",
+			time:"2011-02-01"}
+		var tiezi3={
+			title:"第3条帖子",
+			person:"b",
+			neirong:"第3条帖子这是我的第3条帖子",
+			time:"2011-02-23"}
+		var tiezi4={
+			title:"第1条帖子",
+			person:"c",
+			neirong:"第1条帖子这是我的第1条帖子",
+			time:"2011-02-08"}
+		var tiezi5={
+			title:"第5条帖子",
+			person:"b",
+			neirong:"第5条帖子这是我的第5条帖子",
+			time:"2011-02-18"}
+
+		function createHeader(){
+			document.write('<table align="center" cellpadding="20px" border="1px" cellspacing="0">');
+			document.write('<tr>')
+			document.write('<th>标题</th>');
+			document.write('<th>发帖人</th>');
+			document.write('<th>帖子预览</th>');
+			document.write('<th>发帖时间</th>');
+			document.write('</tr>');
+		}
+
+	function createContent(tiezi){
+			document.write('<tr>');
+			document.write('<td>');
+			document.write(tiezi.title);
+			document.write('</td>');
+				
+			document.write('<td>');
+			document.write(tiezi.person);
+			document.write('</td>');
+					
+			document.write('<td>');
+			document.write(tiezi.neirong.substr(0, 5)+"……");
+			document.write('</td>');
+				
+			document.write('<td>');
+			document.write(tiezi.time);
+			document.write('</td>');
+						
+			document.write('</tr>');
+	}
+
+
+		function createFooter() 
+		{
+			document.write('</table>');
+		} 
+
+		function printTable()
+		{
+			createHeader();
+			createContent(tiezi1);
+			createContent(tiezi2);
+			createContent(tiezi3);
+			createContent(tiezi4);
+			createContent(tiezi5);
+			createFooter();
+
+		}
+		printTable()
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

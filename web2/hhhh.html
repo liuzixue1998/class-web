@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>hh</title>
+	<meta charset="utf-8">
+</head>
+<script type="text/javascript">
+function diag()
+{
+ 	var str=window.prompt("随便写点儿啥吧","比如我叫啥");
+	if(str)
+   	 {
+        	alert("您刚输入的是："+ str)
+    	}
+	
+	var t=window.setInterval(alert("您刚输入的是："+ str),2000); 
+}
+</script>
+<body>
+	<input type="submit" value="点击点击我" name="Su1" onclick="diag()"  />
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>小米</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		* {
+		margin:0px;
+		padding:0px;
+		}
+		#all{float: left;}
+		#nav{
+		margin-top: 20px;
+		margin-left: 50px;
+		list-style:none;
+		line-height:27px;
+		}
+		h3{font-weight: normal;}
+		h5{
+			font-weight: normal;
+			color: gray;
+		}
+		h4{color: orange;}
+		.lla{
+			width: 230px;
+			height: 300px;
+			margin: 20px;
+			padding: 10px;
+			float: left;
+			border-width: 20px;
+
+		}
+		#del{
+			text-decoration: line-through;
+			color: orange;
+		}
+		#nav ul{list-style: none;}
+		#nav a:link,#nav a:visited{
+		display:block;
+		width:80px;
+		text-align:center;
+		text-decoration:none;
+		background:#CCC;
+		}
+		#nav a:hover{
+		text-decoration: underline;
+		font-weight: bold;
+		}
+		#nav li ul{
+		display:none;
+		}
+		#nav li.subMenuShow ul{
+		display:block;
+		background:orange;
+		color: white;
+		width: 250px;
+		height: 100px;
+		}
+		#nav li ul li a:hover{
+		background:#C00;
+		}
+		.hah{
+			float: left;
+
+		}
+		.hhh{
+			position: absolute;
+			left: 300px;
+			top: 0px;
+		}
+		.right{
+			position: absolute;
+			top: 80px;
+		}
+		.lab
+		{
+			height: 50px;
+			position: absolute;
+			top: 270px;
+		}
+		.lab1
+		{
+			height: 50px;
+			position: absolute;
+			top: 600px;
+		}
+		
+
+	</style>
+	<script type="text/javascript">
+		window.onload = function(){
+			var liNodes = document.getElementsByTagName("li");
+			for (var i=0; i<liNodes.length; i++)
+			{
+				liNodes[i].onmouseover = function(){
+					this.className = "subMenuShow";
+				}
+				liNodes[i].onmouseout = function(){
+					this.className = "";
+				}
+			}
+		}
+	
+	</script>
+</head>
+<body>
+	<div id="all">
+		<ul id="nav">
+			<div class="right">
+			<li>
+				<img src="img/left.jpg">
+			</li>
+			</div>
+			<div class="hhh">
+			<div class="lla" >
+			<li>
+				<img src="img/tv.jpg"> 
+				<h3>小米电视4A 32"</h3> 
+				<h5>64位四核处理器/1GB+4GB大内存</h5>
+				<h4>999元 
+				<p id="del">1199元</p>
+				</h4>
+				<div class="lab">
+				<ul >
+					<li> 特用了一段时间后才来评价的，电视性能特别好，更值得赞的...</li>
+					<li>来自于 邓治江的评价</li>
+				</ul>
+				</div>
+			</li>
+			</div>
+			<div class="lla">
+			<li>
+				<img src="img/tv49.png">  
+				<h3>小米电视4A 49英寸 标准版</h3>
+				<h5>2GB+8GB 大储存/全高清HDR</h5>
+				<h4>2399元</h4>
+				<div class="lab">
+				<ul>
+					<li> 黑科技，便宜大器大爱，支持小米，支持国货！</li>
+					<li>来自于 1169087547966的评价</li>
+				</ul>
+				</div>
+			</li>
+			</div>
+			<div class="lla">
+			<li>
+				<img src="img/pro.jpg">  
+				<h3>小米笔记本Pro 15.6英寸</h3>
+				<h5>全金属强化机身/FHD全贴合屏幕</h5>
+				<h4>5599元</h4>
+				<div class="lab">
+				<ul>
+					<li> 和我想象中的一样好，从红米2，note4，小米5s...</li>
+					<li>来自于 兰彻的评价</li>
+				</ul>
+				</div>
+			</li>
+			</div>
+			<div class="lla">
+			<li>
+				<img src="img/air.jpg">  
+				<h3>小米Air 13.3英寸"i7处理器</h3>
+				<h5>inTel酷睿i7处理器，8GB内存+256GB</h5>
+				<h4>5999元</h4>
+				<div class="lab">
+				<ul>
+					<li> 带老板的话，小米产品很有设计感</li>
+					<li>来自于 holes的评价</li>
+				</ul>
+				</div>
+			</li>
+			</div>
+			<div class="lla">
+			<li>
+				<img src="img/hu.jpg"> 
+				<h3>米家恒温电水壶</h3>
+				<h5>水温智能控制，304不锈钢内胆</h5>
+				<h4>199元</h4>
+				<div class="lab1">
+				<ul>
+					<li> 这是第三个了，比第一个优惠不少，质量还不错，烧水也没...</li>
+					<li>来自于 暖酒清风的评价</li>
+				</ul> 
+				</div>
+			</li>
+			</div>
+			<div class="lla">
+			<li>
+				<img src="img/kt.jpg">  
+				<h3>智米全直流变频空调</h3>
+				<h5>一级能效，强劲冷暖</h5>
+				<h4>4399元</h4>
+				<div class="lab1">
+				<ul>
+					<li> </li>
+					<li></li>
+				</ul>
+				</div>
+			</li>
+			</div>
+			<div class="lla"> 
+			<li>
+				<img src="img/jsq.jpg">  
+				<h3>小米净水器（厨上式），增强版</h3>
+				<h5>400加仑大流量，纯水更多，废水更少</h5>
+				<h4>1499元</h4>
+				<div class="lab1">
+				<ul>
+					<li> 经过几次抢购才到手，心里激动呢！物流较快...</li>
+					<li>来自于 随波逐浪的评价</li>
+				</ul>
+				</div>
+			</li>
+			</div>
+			<div class="lla">
+			<li>
+				<img src="img/sxj.jpg">  
+				<h3>小白摄像机 </h3>
+				<h4>399元</h4>
+		    </li>
+		    </div>
+		    </div>
+		</ul>
+	</div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>作业3</title>
+	<script>
+		// 1、函数名 函数的参数 函数的返回值 function
+		// 2、D
+		// 3、注意mul的初始值，求和时为0，现在求乘积，设为1，不用设为0后再判断了，注意要有返回值
+		function multiply(){
+			var mul = 1;
+			for(var i=0,len=arguments.length; i<len; i++){
+				mul*=arguments[i];
+			}
+			return mul;
+		}
+		console.log(multiply(2,3,9));
+		// 4、再次强调字符串的拼接问题，大家写好后运行一下，看看你第一个参数有没有起作用，而且提醒个别同学，这个函数没必要写return，不需要返回值的，函数里实现的功能就是输出表格，所以在调用的时候，只需要show();就可以了，不要document.write(show());
+		function show(bold,row,col){
+			document.write('<table border="'+bold+'" width="200px">')	
+			for(var i=0;i<row;i++){
+				document.write("<tr>");
+				for(var j=0;j<col;j++){
+					document.write('<td>&nbsp;</td>')
+				}
+				document.write('</tr>');
+			  }
+			document.write('</table>');	
+		}
+		show('10px',4,5);
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

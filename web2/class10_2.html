@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>hh</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	
+
+	</style>
+</head>
+<body>
+	<div class="wrap" id="box" style="width: 100px;height: 100px;background-color: red;"></div>
+	<img src="img/9.jpg" alt="">
+	<button id="btn" style="position: absolute;top: 50px;">按钮</button>
+	
+</body>
+<script type="text/javascript">
+	var timer;
+	var flag=0;//true
+	var btn=document.getElementById('btn');
+	btn.onclick=function () {
+		if(flag%2==0){
+		timer=setInterval(function(){
+			box.style.left=parseInt(box.style.left)+1+'px';
+		},30)
+	  }
+		else{
+			clearInterval(timer);
+		}
+		flag++;
+	}
+		console.log(btn.nodeValue);
+		console.log(btn.nodeName);
+		console.log(btn.nodeType);
+
+		console.log(btn.childNodes[0].nodeValue);
+		console.log(btn.childNodes[0].nodeName);
+		console.log(btn.childNodes[0].nodeType);
+
+		console.log(btn.getAttributeName.nodeValue);
+		console.log(btn.getAttributeName.nodeName);
+		console.log(btn.getAttributeName.nodeType);
+
+
+	var box=document.getElementById('box');
+	/*var img=document.getElementsByTagName('img')[0];
+	//console.log(img); 数组
+	console.log(box.style.width);
+	console.log(box.className);
+	box.style.width='500px';
+	box.style.display='none';// 隐藏
+	box.style.display='block';// 显示
+
+
+	console.log(box.getAttribute('id' ));
+	console.log(img.getAttribute('src' ));
+	img.src='img/9.jpg';
+	img.setAttribute('src','img/9.jpg');
+	*/
+
+
+</script>
+</html>
